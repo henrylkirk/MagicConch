@@ -1,0 +1,117 @@
+/* Custom CSS for this app */
+@font-face {
+    font-family: "Meme Caption";
+    src: url(../fonts/Anton-Regular.ttf) format("truetype");
+}
+.meme-text {
+    position: absolute;
+    width:100%;
+    text-align: center;
+    font-size: 14pt;
+    padding: 5px;
+    color: white !important;
+    text-transform: uppercase;
+    font-family: "Meme Caption";
+    -webkit-text-stroke: 1px black;
+}
+.caption {
+    background-color: transparent;
+    font-size: 18pt !important;
+}
+.caption-bottom {
+    bottom: 15px;
+}
+.item {
+    border: none;
+    font-size: 12px;
+    padding:4px;
+}
+.complete { color:grey; text-decoration: line-through; }
+
+.card {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    width: calc(50% - 8px);
+    float: left;
+}
+.full-image {
+    margin-bottom: -7px;
+}
+.card img {
+    /* make card images constant size for consistent grid */
+    width: calc(50vw - 12px);
+    height: calc(50vw - 12px);
+}
+.card, .list-inset {
+    margin: 4px 4px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.popup-container .popup {
+    width: inherit;
+    border-radius: 4px;
+}
+.shell:before {
+    content: url("../img/shell.svg") !important;
+    width: 32px;
+}
+.bar.bar-calm, .popup-container .popup {
+	background-color: #1E2129;
+	background-image: none;
+}
+.button.button-calm {
+    background-color: #5B53FF;
+    border: none;
+}
+.button.button-calm.activated {
+    background-color: #413cb8;
+}
+.card .item-text-wrap {
+    padding: 0px;
+}
+.scroll-content {
+    background-color: #15171C;
+    padding: 4px;
+}
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.9); /* make backdrop darker against popup */
+}
+.item-divider {
+    background-color: #1E2129;
+    border: none;
+}
+.item-divider, .popup, .popup-title {
+    color: white;
+}
+.popup-body > span { /* "enter title" label */
+    color: #3F445E;
+}
+.popup-container {
+    top: -60px; /* so bottom caption not hidden by keyboard */
+}
+.meme-div { /* holds image and captions */
+    position: relative;
+}
+.popup-head {
+    text-align: left;
+    border: none;
+    padding-bottom: 5px;
+}
+.button.ng-binding.ion-ios-camera-outline.button-calm { /* camera icon */
+    font-size: 28pt;
+}
+.img-center {
+    /*display: block;
+    margin: auto;
+    width: 65%;*/
+}
+.popup-body > input {
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 4px;
+}
+input[type="text"] {
+    min-height: 34px;
+}
+body > div.popup-container.popup-showing.active > div > div.popup-body > input { /* title input field */
+    margin-bottom: 10px;
+}

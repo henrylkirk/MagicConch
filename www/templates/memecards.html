@@ -1,0 +1,15 @@
+<ion-content>
+      
+      <!-- Display each meme as card -->
+      <div class="card" ng-repeat="meme in memes" ng-click="viewMeme(meme)">
+        <div class="item item-divider">
+          {{meme.title}}
+        </div>
+        <div class="item item-text-wrap">
+              <h2 class="caption meme-text caption-top">{{meme.captionTop}}</h2>
+              <img class="full-image" ng-show="meme.imgURI !== undefined" ng-src="{{meme.imgURI}}">
+              <h2 class="caption meme-text caption-bottom">{{meme.captionBottom}}</h2>
+        </div>
+      </div>
+
+</ion-content>
