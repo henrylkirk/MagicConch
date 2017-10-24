@@ -1,4 +1,4 @@
-// Ionic Starter App
+// MagicConch
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
@@ -11,10 +11,6 @@ angular.module('magicconch', ['ionic', 'magicconch.controllers', 'magicconch.ser
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-
-      // Don't remove this line unless you know what you are doing. It stops the viewport
-      // from snapping when text inputs are focused. Ionic handles this internally for
-      // a much nicer keyboard experience.
       cordova.plugins.Keyboard.disableScroll(true);
     }
     if(window.StatusBar) {
@@ -22,20 +18,3 @@ angular.module('magicconch', ['ionic', 'magicconch.controllers', 'magicconch.ser
     }
   });
 }) // end run
-
-// .config(function($stateProvider, $urlRouterProvider) {
-
-//   .state('tab.chickens', {
-//       url: '/chickens',
-//       views: {
-//         'tab-chickens': {
-//           templateUrl: 'templates/tab-chickens.html',
-//           controller: 'ChickensCtrl'
-//         }
-//       }
-//     })
-
-//   // if none of the above states are matched, use this as the fallback
-//   $urlRouterProvider.otherwise('/index');
-
-// });
